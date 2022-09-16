@@ -1,0 +1,38 @@
+.bordered, th, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+thead tr:nth-child(1){
+  background-color: #f709c3;
+}
+tr:nth-child(even){
+  background-color: #eebbc8;
+}
+tr:nth-child(odd){
+  background-color: #f37ef7;
+}
+
+.centered{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+table{ 
+  font-size: 22px;
+  text-align: center;
+  
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c893e7;
+  /* justify-content: center; */
+}
+th, td{
+  padding:8px 10px;
+  min-width: fit-content;
+  
+}
