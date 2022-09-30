@@ -1,0 +1,39 @@
+body {
+  display: inline;
+  justify-content: center;
+  text-align: justify;
+}
+
+img {
+  width: 615px;
+  position: relative;
+}
+
+div {
+  width: 40%;
+  margin: auto;
+  margin-top: 7%;
+  position: relative;
+  align-items: center;
+}
+
+h1 {
+
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  position: static;
+  font-size: 43px;
+}
+
+h2 {
+
+  font-family: cursive;
+  text-align: center;
+}
+
+h3 {
+
+  font-family: cursive;
+  background-color: rgba(253, 251, 92, 0.577);
+  text-align: center;
+}

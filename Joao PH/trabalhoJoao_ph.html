@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="trabalhoJoao_ph.css">
+  <title>Cálculo do pH de uma solução</title>
+</head>
+
+<body>
+
+  <div>
+    <h1>Cálculo do pH de uma solução</h1><br>
+    <h2>Solução de HBr 0,02 mol/L:</h2>
+    <!--
+pH = -log[H+]
+[H+] = 2.10^-2 mol/Ls
+-->
+    <h3 id="ph">pH: </h3>
+    <script>
+      document.getElementById("ph").innerHTML += (Math.log10(0.02) * -1).toFixed(2);
+    </script><br><br><br>
+    <img src="escala.png" />
+  </div>
+</body>
+
+</html>
