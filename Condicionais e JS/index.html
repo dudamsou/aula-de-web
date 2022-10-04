@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade_29_09</title>
+</head>
+<body>
+    <h1>Seja muito bem-vindo funcionario</h1>
+    <h3>primeiramente, vamos fazer uma verificação basica</h3>
+    <form action="#" onsubmit="return submitForm()">
+        <fieldset>
+            <legend>Humano ou Bot?</legend>
+            <label for="soma">Resolva: 12 + 4 - 7</label>
+            <input type="text" id="soma" name="soma"><br>
+            <input type="submit" value="Verifique" id="button">
+        </fieldset>
+    </form>
+</body>
+</html>
+
+<script>
+    function submitForm(){
+        var checagem = document.getElementById("soma").value;
+        if(checagem == 9){
+            alert("Acertou, mais cê eh bão mesmo ein")
+        }else{
+            location.href='file:///C:/Users/caosr/Desktop/Uniara%20-%20Os%20Mais%20Perigosos/html/atividade%2029_09/outro.html';
+            return false;
+        }
+        return;
+    }
+</script>
+
+<style>
+    body{
+        background-color: rgb(230,230,230);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    h1, h3{
+        text-align: center;
+    }
+    h1{
+        font-size: 50px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    fieldset{
+        border-radius: 6px;
+        border-color: white;
+    }
+    #button{
+        background-color: rgb(230, 29, 29);
+        color: white;
+        border-color: white;
+    }
+</style>
