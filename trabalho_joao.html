@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Listas e cards</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  </head>
+
+  <body>
+    <div class="w3-container">
+      <h2>Tops 3 de Sampa!</h2>
+      <ul class="w3-ul w3-card-4">
+        <li class="w3-bar">
+          <div class="w3-bar-item w3-white w3-xlarge w3-right" id="cont1">
+            <span
+              class="w3-bar-item w3-button w3-white w3-xlarge w3-right"
+              onclick="gerar1()"
+              >Clique aqui:
+            </span>
+          </div>
+          <img
+            src="https://pbs.twimg.com/media/Dm1wCcdW4AU73tH.jpg:large"
+            class="w3-bar-item w3-circle w3-hide-small"
+            style="width: 85px"
+          />
+          <div class="w3-bar-item">
+            <span class="w3-large">Leo</span><br />
+            <span>President of Gym</span>
+          </div>
+        </li>
+
+        <li class="w3-bar">
+          <div class="w3-bar-item w3-white w3-xlarge w3-right" id="cont2">
+            <span
+              class="w3-bar-item w3-button w3-white w3-xlarge w3-right"
+              onclick="gerar2()"
+              >Clique aqui:
+            </span>
+          </div>
+          <img
+            src="https://cdn6.campograndenews.com.br/uploads/noticias/2021/11/17/fuudfnfpj61y.png"
+            class="w3-bar-item w3-circle w3-hide-small"
+            style="width: 85px"
+          />
+          <div class="w3-bar-item">
+            <span class="w3-large">Muzy</span><br />
+            <span>Coach</span>
+          </div>
+        </li>
+
+        <li class="w3-bar">
+          <div class="w3-bar-item w3-white w3-xlarge w3-right" id="cont3">
+            <span
+              class="w3-bar-item w3-button w3-white w3-xlarge w3-right"
+              onclick="gerar3()"
+              >Clique aqui:
+            </span>
+          </div>
+          <img
+            src="https://gartic.com.br/imgs/mural/ga/gabiplay/rato-na-academia.png"
+            class="w3-bar-item w3-circle w3-hide-small"
+            style="width: 85px"
+          />
+          <div class="w3-bar-item">
+            <span class="w3-large">Jorge-Rato</span><br />
+            <span>Rato de Academia</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      var aleatório1 = 0;
+      function gerar1() {
+        var resp = document.getElementById("cont1");
+        resp.innerHTML = Math.floor(10 * Math.random());
+      }
+      function gerar2() {
+        var resp = document.getElementById("cont2");
+        resp.innerHTML = Math.floor(10 * Math.random());
+      }
+      function gerar3() {
+        var resp = document.getElementById("cont3");
+        resp.innerHTML = Math.floor(10 * Math.random());
+      }
+    </script>
+  </body>
+</html>
